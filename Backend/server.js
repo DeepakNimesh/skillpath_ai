@@ -1,40 +1,3 @@
-// import express from 'express';
-// import dotenv from 'dotenv';
-// import connectDB from './config/db.js';
-// import authRoutes from './routes/authRoutes.js';
-
-// dotenv.config();
-
-// await connectDB();
-
-// const app = express();
-// const PORT = process.env.PORT;
-
-// app.use(express.json());
-
-// app.use('/api/auth', authRoutes)
-
-// app.get('/api/health', (req, res)=>{
-//     res.json({
-//         status : 'ok',
-//         message : "Skillpath AI is running"
-//     })
-// });
-
-// app.listen(PORT, ()=>{
-//     console.log((`Server is running on port: ${PORT}`));
-// })
-
-
-
-
-
-
-
-
-
-
-
 import path from 'path';
 import express from 'express';
 import dotenv from 'dotenv';
@@ -42,7 +5,7 @@ import cors from 'cors';
 import helmet from 'helmet';
 import morgan from 'morgan';
 import cookieParser from 'cookie-parser';
-// import 'express-async-errors';
+import 'express-async-errors';
 
 import connectDB from './config/db.js';
 import { notFound, errorHandler } from './middleware/errorMiddleware.js';
