@@ -1,29 +1,3 @@
-// function FeatureCard({ icon, title, description, color }) {
-//   return (
-//     <div className="feature-card" style={{ borderColor: color }}>
-//       <div className="feature-icon" style={{ backgroundColor: `${color}15`, color }}>
-//         {icon}
-//       </div>
-//       <h3>{title}</h3>
-//       <p>{description}</p>
-//     </div>
-//   )
-// }
-
-// export default FeatureCard
-
-
-
-
-
-
-
-
-
-
-
-
-
 const FeatureCard = ({ icon, title, description, color = 'var(--color-primary)' }) => (
   <div className="card card--hover" style={{ textAlign: 'center', padding: 'var(--space-8)' }}>
     <div style={{
